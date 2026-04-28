@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid - New Features Presentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=27">
+  <link rel="stylesheet" href="css/sections.css?v=233">
+</head>
+<body>
+
+  <!-- Mobile portrait orientation overlay -->
+  <div class="rotate-overlay" aria-hidden="true">
+    <div class="rotate-overlay__inner">
+      <svg class="rotate-overlay__icon" width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 17.5H12.01M8.2 22H15.8C16.9201 22 17.4802 22 17.908 21.782C18.2843 21.5903 18.5903 21.2843 18.782 20.908C19 20.4802 19 19.9201 19 18.8V5.2C19 4.07989 19 3.51984 18.782 3.09202C18.5903 2.71569 18.2843 2.40973 17.908 2.21799C17.4802 2 16.9201 2 15.8 2H8.2C7.0799 2 6.51984 2 6.09202 2.21799C5.71569 2.40973 5.40973 2.71569 5.21799 3.09202C5 3.51984 5 4.0799 5 5.2V18.8C5 19.9201 5 20.4802 5.21799 20.908C5.40973 21.2843 5.71569 21.5903 6.09202 21.782C6.51984 22 7.07989 22 8.2 22ZM12.5 17.5C12.5 17.7761 12.2761 18 12 18C11.7239 18 11.5 17.7761 11.5 17.5C11.5 17.2239 11.7239 17 12 17C12.2761 17 12.5 17.2239 12.5 17.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2 class="rotate-overlay__title">Please rotate your device</h2>
+      <p class="rotate-overlay__text">This presentation is best viewed in landscape mode. Turn your phone sideways to continue.</p>
+    </div>
+  </div>
+
+  <!-- Navigation Dots -->
+  <nav class="nav-dots" aria-label="Section navigation">
+    <button class="nav-dot active" data-section="0" title="Welcome"></button>
+    <button class="nav-dot" data-section="1" title="Features Overview"></button>
+    <button class="nav-dot" data-section="2" title="Manual Bonus Code"></button>
+    <button class="nav-dot" data-section="3" title="User Flows"></button>
+    <button class="nav-dot" data-section="4" title="Customisation"></button>
+    <button class="nav-dot" data-section="5" title="Payments"></button>
+    <button class="nav-dot" data-section="6" title="Control"></button>
+    <button class="nav-dot" data-section="7" title="Sweepstakes"></button>
+    <button class="nav-dot" data-section="8" title="Upcoming"></button>
+  </nav>
+
+
+  <!-- ============================================
+       SECTION 1: Welcome / Intro
+       ============================================ -->
+  <section class="section section-welcome" id="welcome">
+    <div class="welcome">
+      <div class="welcome__topbar">
+        <img src="assets/images/fluid-logo.svg" alt="Fluid" class="welcome__brand-logo">
+        <span class="welcome__corner">
+          NEW FEATURES<br>RELEASE NOTES
+        </span>
+      </div>
+
+      <div class="welcome__title-row anim-fade-in-up anim-delay-1">
+        <h1 class="welcome__title">
+          <span class="welcome__title-line">
+            <span class="welcome__word welcome__word--script">What the</span>
+            <span class="welcome__word welcome__word--sans"><span class="welcome__word--purple">Fluid</span> team</span>
+          </span>
+          <span class="welcome__title-line">
+            <span class="welcome__word welcome__word--script">has been</span>
+            <span class="welcome__word welcome__word--sans">up to</span>
+          </span>
+        </h1>
+        <span class="section-tag section-tag--green welcome__side-tag">Latest feature releases</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 2: Bento - Overall Features
+       ============================================ -->
+  <section class="section section-bento-features" id="features-overview">
+    <div class="section__inner">
+      <div class="bento-grid">
+        <!-- Bento Box 1: Manual Bonus Code -->
+        <a class="bento-card bento-box-bonus" id="bento-bonus" href="#bonus-code">
+          <div class="bonus-text">
+            <span class="bento-tag">Latest</span>
+            <div class="bento-card__title">Manual<br>Bonus Code</div>
+          </div>
+          <div class="bento-card__visual">
+            <img src="assets/images/bonus/bonus-4.svg" alt="Manual Bonus Code" class="bonus-static">
+          </div>
+        </a>
+
+        <!-- Bento Box 2: Improving User Flows -->
+        <a class="bento-card bento-box-flows" id="bento-flows" href="#user-flows">
+          <div class="bento-card__title">Improving User Flows</div>
+          <div class="bento-card__desc">Skip steps, redirect in one click and use smart inputs.</div>
+          <div class="bento-card__visual">
+            <div class="flows-animation">
+              <img src="assets/images/flows/Visa%20Selected.png" alt="Visa selected" class="flows-frame flows-frame-1">
+              <img src="assets/images/flows/Payz%20Selected.png" alt="Payz selected" class="flows-frame flows-frame-2">
+              <img src="assets/images/flows/Payz%20Iframe.png" alt="Payz redirect" class="flows-frame flows-frame-3">
+            </div>
+          </div>
+        </a>
+
+        <!-- Bento Box 3: Customisable Features -->
+        <a class="bento-card bento-box-custom" id="bento-custom" href="#customisable">
+          <div class="bento-card__title">Customisable Features</div>
+          <div class="bento-card__desc">Personalise bonus visibility or the user's withdrawal experience</div>
+          <div class="bento-card__visual">
+            <div class="custom-image-wrap">
+              <img src="assets/images/2FA.png" alt="2FA verification" class="custom-image">
+            </div>
+          </div>
+        </a>
+
+        <!-- Bento Box 4: Payment Support (wide) -->
+        <a class="bento-card bento-box-payments" id="bento-payments" href="#payments">
+          <div class="bento-card__title">Payment Support</div>
+          <div class="bento-card__desc">Multi-gateway and Apple Pay support</div>
+          <img src="assets/images/Apple%20Pay%20Sheet.png" alt="Apple Pay sheet" class="payments-image">
+        </a>
+
+        <!-- Bento Box 5: Control Additions -->
+        <a class="bento-card bento-box-control" id="bento-control" href="#control">
+          <div class="control-text">
+            <span class="bento-tag">Better data</span>
+            <div class="bento-card__title">Control Additions</div>
+            <div class="bento-card__desc">New Dashboard tools and additions</div>
+          </div>
+          <img src="assets/images/dashboard-updates.png" alt="Dashboard updates" class="control-image">
+        </a>
+
+        <!-- Bento Box 6: Sweepstakes -->
+        <a class="bento-card bento-box-sweepstakes" id="bento-sweepstakes" href="#sweepstakes">
+          <div class="bento-card__title">Sweepstakes</div>
+          <div class="bento-card__desc">Fluid is now available for Sweepstakes casino</div>
+          <span class="sweepstakes-tag">
+            <svg class="sweepstakes-tag__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18.2 22 12 18.3 5.8 22l1.7-7.2L2 10l7.1-1.1L12 2z"/></svg>
+            New Product
+          </span>
+          <img src="assets/images/stage-light.jpg" alt="" class="sweepstakes-rays" aria-hidden="true">
+          <div class="sweepstakes-rays-purple" aria-hidden="true"></div>
+          <div class="sweepstakes-stage">
+            <div class="sweepstakes-coin-wrap">
+              <img src="assets/images/Sweepstakes.png" alt="Sweepstakes coins" class="sweepstakes-image">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 3: Manual Bonus Code
+       ============================================ -->
+  <section class="section section-bonus-code" id="bonus-code">
+    <div class="section__inner">
+      <div class="feature-content">
+        <span class="section-tag section-tag--purple">New Wallet feature</span>
+        <h2 class="heading-2">Manual Bonus Code</h2>
+        <p class="subtitle">Allow players to enter promotional bonus codes directly in the cashier, unlocking exclusive offers and personalised rewards during their deposit journey.</p>
+
+        <ul class="feature-list feature-list--plain">
+          <li class="feature-list__item">
+            <div class="feature-list__text">
+              <h4>Direct Code Entry</h4>
+              <p>Players can input bonus codes manually, giving operators full control over promotional campaigns and targeted offers.</p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__text">
+              <h4>Real-Time Validation</h4>
+              <p>Instant code verification with clear feedback, ensuring a smooth experience and reducing support tickets.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="feature-visual">
+        <video class="feature-video" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/videos/bonus-code.mp4?v=4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 4: Improving User Flows
+       ============================================ -->
+  <section class="section section-user-flows" id="user-flows">
+    <div class="section__inner">
+      <div class="flows-header">
+        <div class="flows-header__title">
+          <h2 class="heading-2">Improving User Flows</h2>
+        </div>
+        <p class="subtitle flows-header__body">Reduce the number of clicks to make deposits faster, direct redirection to external payment methods and use smart input fields that correlate between each other.</p>
+      </div>
+
+      <div class="flows-toggle-row">
+        <span class="section-tag section-tag--purple">New wallet features</span>
+        <div class="flows-toggle" data-mode="latest" role="tablist" aria-label="Flow version">
+          <button type="button" class="flows-toggle__btn" data-mode="previous" role="tab" aria-selected="false">Previous</button>
+          <button type="button" class="flows-toggle__btn is-active" data-mode="latest" role="tab" aria-selected="true">Latest</button>
+        </div>
+      </div>
+
+      <div class="flows-cards" data-mode="latest">
+        <div class="flows-card bento-card">
+          <div class="flows-card__media">
+            <img src="assets/images/Skip%20redirect%20-%20before.png" alt="" class="flows-card__media-static">
+            <div class="flows-card__media-anim flows-card__media-anim--previous" aria-hidden="true">
+              <video class="flows-card__media-video" muted loop playsinline preload="metadata">
+                <source src="assets/videos/skip-details-before.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="flows-card__media-anim flows-card__media-anim--latest" aria-hidden="true">
+              <video class="flows-card__media-video" muted loop playsinline preload="metadata">
+                <source src="assets/videos/skip-details-now.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="flows-card__text">
+            <div class="bento-card__title">Fewer Clicks</div>
+            <div class="bento-card__desc">Minimise friction by removing a step that does not require action from the user</div>
+          </div>
+        </div>
+        <div class="flows-card bento-card">
+          <div class="flows-card__media">
+            <img src="assets/images/Skip%20redirect%20-%20before.png" alt="" class="flows-card__media-static">
+            <div class="flows-card__media-anim flows-card__media-anim--previous" aria-hidden="true">
+              <video class="flows-card__media-video" muted loop playsinline preload="metadata">
+                <source src="assets/videos/skip-redirect-before.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="flows-card__media-anim flows-card__media-anim--latest" aria-hidden="true">
+              <video class="flows-card__media-video" muted loop playsinline preload="metadata">
+                <source src="assets/videos/skip-redirect-now.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="flows-card__text">
+            <div class="bento-card__title">Direct Redirects</div>
+            <div class="bento-card__desc">Send players straight to external payment providers without unnecessary stops.</div>
+          </div>
+        </div>
+        <div class="flows-card bento-card">
+          <div class="flows-card__media">
+            <img src="assets/images/smart%20-%20inputs.png" alt="" class="flows-card__media-static">
+            <div class="flows-card__media-anim flows-card__media-anim--previous" aria-hidden="true">
+              <video class="flows-card__media-video" muted loop playsinline preload="metadata">
+                <source src="assets/videos/smart-inputs-before.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="flows-card__media-anim flows-card__media-anim--latest" aria-hidden="true">
+              <video class="flows-card__media-video" muted loop playsinline preload="metadata">
+                <source src="assets/videos/smart-inputs-now.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="flows-card__text">
+            <div class="bento-card__title">Smart Inputs</div>
+            <div class="bento-card__desc">Contextual fields that respond to each other and adapt to player behaviour.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 5: Customisable Features
+       ============================================ -->
+  <section class="section section-customisable" id="customisable">
+    <div class="section__inner">
+      <div class="custom-header">
+        <h2 class="heading-2">Customisable Features</h2>
+        <p class="subtitle custom-header__body">Match the cashier to your brand identity. Customise themes, colours, layouts, and user journeys to create a seamless experience.</p>
+      </div>
+      <span class="section-tag section-tag--purple">New wallet features</span>
+
+      <div class="custom-stack">
+        <div class="custom-stack__card bento-card">
+          <div class="custom-stack__media">
+            <img src="Bonus%20outline.png" alt="Bonus outline" class="custom-stack__media-img custom-stack__media-img--float">
+          </div>
+          <div class="custom-stack__text custom-stack__text--left">
+            <div class="bento-card__title">Highlight the<br>Selected Bonus</div>
+            <div class="bento-card__desc">Draw attention to active bonuses so players always know what promotion they're claiming.</div>
+          </div>
+        </div>
+
+        <div class="custom-stack__card bento-card">
+          <div class="custom-stack__media custom-stack__media--left">
+            <img src="Fluid%20Notifcation.png" alt="Fluid Notification" class="custom-stack__media-img custom-stack__media-img--float">
+          </div>
+          <div class="custom-stack__text custom-stack__text--right">
+            <div class="bento-card__title">Ensure the Pending<br>Withdrawal Interaction</div>
+            <div class="bento-card__desc">Guide players through the withdrawal flow with clear status updates and confirmation steps.</div>
+          </div>
+        </div>
+
+        <div class="custom-stack__card bento-card">
+          <div class="custom-stack__media">
+            <img src="2FA.png" alt="2FA confirmation" class="custom-stack__media-img custom-stack__media-img--float">
+          </div>
+          <div class="custom-stack__text custom-stack__text--left">
+            <div class="bento-card__title">Two Factor Authentication<br>on Withdrawals</div>
+            <div class="bento-card__desc">Add an extra layer of security by requiring 2FA verification before processing any withdrawal.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 6: Payment Support
+       ============================================ -->
+  <section class="section section-payments" id="payments">
+    <div class="section__inner">
+      <div class="feature-content">
+        <span class="section-tag section-tag--blue">New features</span>
+        <h2 class="heading-2">Payment Support</h2>
+        <p class="subtitle">New payment methods and enhanced processing capabilities to serve players in every market. Fluid now supports even more ways to pay.</p>
+
+        <div class="payments-accordion">
+          <div class="accordion-item is-active" data-payments-panel="gateway">
+            <button class="accordion-header" type="button" aria-expanded="true">
+              <div class="accordion-header__text">
+                <h4>Multi-Gateway Support</h4>
+              </div>
+              <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-body">
+              <p>Route transactions through multiple payment gateways simultaneously, improving acceptance rates and providing automatic failover for uninterrupted payment processing.</p>
+            </div>
+          </div>
+          <div class="accordion-item" data-payments-panel="applepay">
+            <button class="accordion-header" type="button" aria-expanded="false">
+              <div class="accordion-header__text">
+                <h4>Apple Pay Support</h4>
+              </div>
+              <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion-body">
+              <p>Native Apple Pay integration lets players deposit with a single tap using Face ID or Touch ID, delivering a frictionless mobile checkout experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-visual payments-visual">
+        <video class="payments-mockup payments-mockup--gateway is-visible" autoplay muted loop playsinline preload="metadata">
+          <source src="Multi%20gateway%20support.mp4" type="video/mp4">
+        </video>
+        <video class="payments-mockup payments-mockup--applepay" autoplay muted loop playsinline preload="metadata">
+          <source src="Apple%20pay.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 7: Control Additions
+       ============================================ -->
+  <section class="section section-control" id="control">
+    <div class="section__inner">
+      <div class="control-top-header">
+        <div class="control-top-header__title">
+          <h2 class="heading-2">Control Additions</h2>
+          <span class="section-tag section-tag--blue">Back Office tools</span>
+        </div>
+        <p class="subtitle control-top-header__body">New charts, tracking events, optimisation and speed to enhance the data provided by Fluid</p>
+      </div>
+
+      <div class="control-layout">
+        <div class="control-features-box">
+          <ul class="control-feature-list">
+            <li class="control-feature-item" data-control-hover="payment">
+              <div class="control-feature-item__content">
+                <h4>Payment method chart</h4>
+                <p>Now a more detailed view of the best performing payment methods</p>
+              </div>
+            </li>
+            <li class="control-feature-item" data-control-hover="chart">
+              <div class="control-feature-item__content">
+                <h4>New Chart type</h4>
+                <p>Understand user behaviour with new visual charts and visualise your data faster</p>
+              </div>
+            </li>
+            <li class="control-feature-item" data-control-hover="events">
+              <div class="control-feature-item__content">
+                <h4>New tracking events</h4>
+                <p>More detailed events on User Activity that helps pinpoint user's pains</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="control-visual">
+          <img src="Payment%20Method%20chart.png" alt="Payment method chart" class="control-mockup control-mockup--payment is-visible" data-control-mockup="payment">
+          <img src="New%20Chart%20type.png" alt="New chart type" class="control-mockup control-mockup--chart" data-control-mockup="chart">
+          <img src="New%20event%20types.png" alt="New tracking events" class="control-mockup control-mockup--events" data-control-mockup="events">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 8: Sweepstakes
+       ============================================ -->
+  <section class="section section-sweepstakes" id="sweepstakes">
+    <div class="section__inner">
+      <div class="sweep-header">
+        <a class="section-tag section-tag--yellow sweep-header__tag" href="https://www.figma.com/proto/lbj3qG2VolNqsSAQ5TRlwm/Fluid-Sweepstakes?node-id=1-386&p=f&viewport=45%2C148%2C0.6&t=NZbMtxr0hBr8dkWh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A386&show-proto-sidebar=1&page-id=1%3A123" target="_blank" rel="noopener noreferrer">
+          <svg class="sweep-header__tag-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18.2 22 12 18.3 5.8 22l1.7-7.2L2 10l7.1-1.1L12 2z"/></svg>
+          Click to view prototype
+        </a>
+        <h2 class="heading-2 sweep-header__title">Sweepstakes</h2>
+      </div>
+      <div class="sweep-bento">
+
+        <!-- LEFT COLUMN -->
+        <div class="sweep-col sweep-col--left">
+
+          <!-- Card 1: Smart and Seamless Upselling features -->
+          <div class="sweep-card sweep-card--upsell">
+            <div class="sweep-upsell-img-wrap">
+              <img src="Smart%20and%20Seamless%20.png" alt="Smart and Seamless upsell" class="sweep-upsell-img">
+            </div>
+            <h3 class="sweep-card__title sweep-card__title--bottom-center">
+              <span>Smart and Seamless</span>
+              <strong>Upselling features</strong>
+            </h3>
+          </div>
+
+          <!-- Card 2: Special tags -->
+          <div class="sweep-card sweep-card--tags">
+            <h3 class="sweep-card__title sweep-card__title--top-center">
+              <span class="sweep-card__title-inline">Special <strong>tags</strong></span>
+            </h3>
+            <div class="sweep-card__media sweep-tags-media">
+              <img src="Special%20tags.png" alt="Special tags" class="sweep-tags-img">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MIDDLE COLUMN -->
+        <div class="sweep-col sweep-col--mid">
+
+          <!-- Card 3: Buy a pack for the first time in Gameplay! -->
+          <div class="sweep-card sweep-card--gameplay">
+            <h3 class="sweep-card__title sweep-card__title--top-center">
+              <span class="sweep-card__title-line">
+                <strong>Buy a pack</strong> for the
+              </span>
+              <span class="sweep-card__title-line">
+                first time <strong>in Gameplay!</strong>
+              </span>
+            </h3>
+            <div class="sweep-card__media sweep-gameplay-media">
+              <img src="Buy%20a%20pack.png" alt="Buy a pack" class="sweep-gameplay-img">
+            </div>
+          </div>
+
+          <!-- Card 4: Cashier Gamification -->
+          <div class="sweep-card sweep-card--gamification">
+            <h3 class="sweep-card__title sweep-card__title--top-center">
+              <span class="sweep-card__title-inline">Cashier <strong>Gamification</strong></span>
+            </h3>
+            <div class="sweep-card__media sweep-gamification-media">
+              <img src="Cashier%20Gamification.png" alt="Cashier Gamification" class="sweep-gamification-img">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="sweep-col sweep-col--right">
+
+          <!-- Card 5: Pack segmentation: Special packs promotion -->
+          <div class="sweep-card sweep-card--packs">
+            <h3 class="sweep-card__title sweep-card__title--top-center">
+              <strong>Pack segmentation:</strong>
+              <span>Special packs promotion</span>
+            </h3>
+            <div class="sweep-card__media sweep-packs-media">
+              <img src="Pack%20Segmentation.png" alt="Pack Segmentation" class="sweep-packs-img">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECTION 9: Bento - Upcoming Projects
+       ============================================ -->
+  <section class="section section-bento-upcoming" id="upcoming">
+    <div class="section__inner">
+      <div class="upcoming-header">
+        <span class="section-tag section-tag--purple upcoming-header__tag">Fluid's roadmap</span>
+        <h2 class="heading-2 upcoming-header__title">What's Coming Next</h2>
+      </div>
+
+      <div class="upcoming-carousel-wrap">
+      <ul class="upcoming-carousel" role="tablist">
+        <li class="upcoming-slide upcoming-slide--with-image is-active" data-idx="0" role="tab" tabindex="0" aria-selected="true">
+          <div class="upcoming-slide__bg" style="background: linear-gradient(180deg, #B7CBEA 0%, #DDE8F8 60%, #FFFFFF 100%);">
+            <img src="Payment%20method%20first.png" alt="" class="upcoming-slide__img">
+          </div>
+          <div class="upcoming-slide__content">
+            <div class="upcoming-slide__body">
+              <h3 class="upcoming-slide__title">Dynamic User flows</h3>
+              <p class="upcoming-slide__desc">Decide if your users see the amount or the payment method first, A/B test per market, and customise the journey.</p>
+            </div>
+          </div>
+          <div class="upcoming-slide__label">Dynamic User flows</div>
+        </li>
+        <li class="upcoming-slide upcoming-slide--with-image" data-idx="1" role="tab" tabindex="0" aria-selected="false">
+          <div class="upcoming-slide__bg" style="background: linear-gradient(180deg, #C9BEF7 0%, #E6E1FB 60%, #FFFFFF 100%);">
+            <img src="Express.png" alt="" class="upcoming-slide__img">
+          </div>
+          <div class="upcoming-slide__content">
+            <div class="upcoming-slide__body">
+              <h3 class="upcoming-slide__title">Express for First Deposits</h3>
+              <p class="upcoming-slide__desc">Switch the First Time Deposit flow to be a one screen solution, compare how it performs with a step by step approach and choose the best for your customers.</p>
+            </div>
+          </div>
+          <div class="upcoming-slide__label">Express for First Deposits</div>
+        </li>
+        <li class="upcoming-slide upcoming-slide--with-image" data-idx="2" role="tab" tabindex="0" aria-selected="false">
+          <div class="upcoming-slide__bg" style="background: linear-gradient(180deg, #B9E6C9 0%, #DDF0E3 60%, #FFFFFF 100%);">
+            <img src="World%20Cup.png" alt="" class="upcoming-slide__img">
+          </div>
+          <div class="upcoming-slide__content">
+            <div class="upcoming-slide__body">
+              <h3 class="upcoming-slide__title">Seasonal promotions</h3>
+              <p class="upcoming-slide__desc">Add promotional details in your cashier to theme according to local events and upgrade the deposit experience to be more fun.</p>
+            </div>
+          </div>
+          <div class="upcoming-slide__label">Seasonal promotions</div>
+        </li>
+      </ul>
+      </div>
+      <div class="upcoming-footer">
+        <p class="upcoming-footer__text">&#x2728; And many more updates coming soon &#x2728;</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Navigation Script -->
+  <script>
+    // Navigation dots
+    const dots = document.querySelectorAll('.nav-dot');
+    const sections = document.querySelectorAll('.section');
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const idx = parseInt(dot.dataset.section);
+        sections[idx].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Update active dot on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = Array.from(sections).indexOf(entry.target);
+          dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => observer.observe(section));
+
+    // Section 4: Previous / Latest toggle
+    const flowsCards = document.querySelector('.flows-cards');
+    const flowsToggle = document.querySelector('.flows-toggle');
+    const flowsToggleBtns = document.querySelectorAll('.flows-toggle__btn');
+    flowsToggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = btn.dataset.mode;
+        if (!flowsCards || flowsCards.dataset.mode === mode) return;
+        // Trigger the smooth crossfade animation on all card media
+        document.querySelectorAll('.flows-card__media').forEach(media => {
+          media.classList.remove('is-mode-swap');
+          void media.offsetWidth; // force reflow so animation restarts
+          media.classList.add('is-mode-swap');
+        });
+        flowsCards.dataset.mode = mode;
+        if (flowsToggle) flowsToggle.dataset.mode = mode;
+        flowsToggleBtns.forEach(b => {
+          const active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+      });
+    });
+
+    // Section 4: Play flows-card videos only on hover (reset on re-enter)
+    document.querySelectorAll('.flows-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        const mode = flowsCards ? flowsCards.dataset.mode : 'latest';
+        const video = card.querySelector('.flows-card__media-anim--' + mode + ' video');
+        if (video) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        }
+      });
+      card.addEventListener('mouseleave', () => {
+        card.querySelectorAll('video').forEach(v => v.pause());
+      });
+    });
+
+    // Section 6: Payments accordion
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      item.querySelector('.accordion-header').addEventListener('click', () => {
+        if (item.classList.contains('is-active')) return;
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          i.classList.remove('is-active');
+          i.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+        });
+        item.classList.add('is-active');
+        item.querySelector('.accordion-header').setAttribute('aria-expanded', 'true');
+        const panel = item.dataset.paymentsPanel;
+        document.querySelectorAll('.payments-mockup').forEach(img => img.classList.remove('is-visible'));
+        const target = document.querySelector('.payments-mockup--' + panel);
+        if (target) {
+          void target.offsetWidth;
+          target.classList.add('is-visible');
+        }
+      });
+    });
+
+    // Section 9: Expandable Card Carousel — inline widths + CSS width transition
+    const upcomingSlides = Array.from(document.querySelectorAll('.upcoming-slide'));
+    const UPCOMING_ACTIVE_W = 500;
+    const UPCOMING_COLLAPSED_W = 456;
+    const setUpcomingWidth = (el, w) => el.style.setProperty('width', w + 'px', 'important');
+    const applyUpcomingWidths = () => {
+      upcomingSlides.forEach(s => {
+        setUpcomingWidth(s, s.classList.contains('is-active') ? UPCOMING_ACTIVE_W : UPCOMING_COLLAPSED_W);
+      });
+    };
+    const activateUpcomingSlide = (slide) => {
+      if (!slide || slide.classList.contains('is-active')) return;
+      upcomingSlides.forEach(s => {
+        s.classList.remove('is-active');
+        s.setAttribute('aria-selected', 'false');
+      });
+      slide.classList.add('is-active');
+      slide.setAttribute('aria-selected', 'true');
+      applyUpcomingWidths();
+    };
+    applyUpcomingWidths();
+    upcomingSlides.forEach(slide => {
+      slide.addEventListener('mouseenter', () => activateUpcomingSlide(slide));
+      slide.addEventListener('click', () => activateUpcomingSlide(slide));
+      slide.addEventListener('focus', () => activateUpcomingSlide(slide));
+      slide.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activateUpcomingSlide(slide);
+        }
+      });
+    });
+
+    // Section 7: Control Additions — hover swaps mockup (payment is default)
+    const controlMockups = document.querySelectorAll('[data-control-mockup]');
+    const showControlMockup = (key) => {
+      controlMockups.forEach(img => img.classList.remove('is-visible'));
+      const target = document.querySelector('[data-control-mockup="' + key + '"]');
+      if (target) target.classList.add('is-visible');
+    };
+    document.querySelectorAll('[data-control-hover]').forEach(item => {
+      const key = item.dataset.controlHover;
+      item.addEventListener('mouseenter', () => showControlMockup(key));
+      item.addEventListener('mouseleave', () => showControlMockup('payment'));
+    });
+  </script>
+
+</body>
+</html>
